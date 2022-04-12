@@ -1,0 +1,7 @@
+#!/bin/bash
+mv *out ./OUT/log
+
+##rm BATCH* -r
+##rm *out
+##rm seq*
+##rm app

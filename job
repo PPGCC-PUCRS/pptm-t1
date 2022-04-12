@@ -1,0 +1,10 @@
+#!/bin/bash
+
+:> ./$1/sequencial.tempo ;
+:> ./$1/sequencial.output ;
+
+
+for i in `seq 10000000 10000000 100000000`;
+do gcc -o ./$1/app calc_pi-0.c -DNUM_PASSOS=$i -fopenmp ;
+./$1/app 1>> ./$1/sequencial.output 2>> ./$1/sequencial.tempo ;
+done
