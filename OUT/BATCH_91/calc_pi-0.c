@@ -6,7 +6,7 @@ int main () {
   double x, pi, soma = 0.0, tempo, passo;
   tempo = -omp_get_wtime();
   passo = 1.0/NUM_PASSOS;
-  #pragma omp parallel for private(x) reduction(+:soma)
+  #pragma omp parallel for private(x)
   for (i=0;i< NUM_PASSOS; i++){
       x = (i + 0.5) * passo;           // Largura do retangulo
       soma = soma + 4.0 / (1.0 + x*x); // soma += Area do retangulo
