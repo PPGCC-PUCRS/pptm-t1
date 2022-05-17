@@ -1,0 +1,13 @@
+Running on host grad06
+
+Initial Time is Sun 15 May 2022 08:44:53 PM -03
+
+Directory is /home/pp12704/trabalho1
+
+This jobs runs on the following nodes:
+grad06
+
+JOB_ID:
+604
+
+slurmstepd-grad06: error: *** JOB 604 ON grad06 CANCELLED AT 2022-05-15T21:45:09 DUE TO TIME LIMIT ***

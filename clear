@@ -1,5 +1,5 @@
 #!/bin/bash
-mv *out ./OUT/log
+mv *.out logs
 
 ##rm BATCH* -r
 ##rm *out

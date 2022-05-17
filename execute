@@ -1,0 +1,11 @@
+#!/bin/bash
+
+last=$(ls out -Art | tail -1)
+folder=$(($last + 1))
+
+mkdir out/$folder
+
+sbatch batchjobs/batchjob_2
+sbatch batchjobs/batchjob_4
+sbatch batchjobs/batchjob_8
+sbatch batchjobs/batchjob_16
