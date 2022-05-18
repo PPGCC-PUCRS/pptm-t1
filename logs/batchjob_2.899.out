@@ -1,0 +1,54 @@
+Running on host grad03
+
+Initial Time is Wed 18 May 2022 02:50:08 PM -03
+
+Directory is /home/pp12704/trabalho1
+
+This jobs runs on the following nodes:
+grad03
+
+JOB_ID:
+899
+
+Running on folder: 11
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:29:7: error: not enough perfectly nested loops before ‘c’
+   29 |       c.real = -2.0+2.5*(double)(i)/(double)(NPOINTS)+1.0e-7;
+      |       ^
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:29:7: error: not enough perfectly nested loops before ‘c’
+   29 |       c.real = -2.0+2.5*(double)(i)/(double)(NPOINTS)+1.0e-7;
+      |       ^
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:29:7: error: not enough perfectly nested loops before ‘c’
+   29 |       c.real = -2.0+2.5*(double)(i)/(double)(NPOINTS)+1.0e-7;
+      |       ^
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:29:7: error: not enough perfectly nested loops before ‘c’
+   29 |       c.real = -2.0+2.5*(double)(i)/(double)(NPOINTS)+1.0e-7;
+      |       ^
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:29:7: error: not enough perfectly nested loops before ‘c’
+   29 |       c.real = -2.0+2.5*(double)(i)/(double)(NPOINTS)+1.0e-7;
+      |       ^
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:29:7: error: not enough perfectly nested loops before ‘c’
+   29 |       c.real = -2.0+2.5*(double)(i)/(double)(NPOINTS)+1.0e-7;
+      |       ^
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:29:7: error: not enough perfectly nested loops before ‘c’
+   29 |       c.real = -2.0+2.5*(double)(i)/(double)(NPOINTS)+1.0e-7;
+      |       ^
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:29:7: error: not enough perfectly nested loops before ‘c’
+   29 |       c.real = -2.0+2.5*(double)(i)/(double)(NPOINTS)+1.0e-7;
+      |       ^
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:29:7: error: not enough perfectly nested loops before ‘c’
+   29 |       c.real = -2.0+2.5*(double)(i)/(double)(NPOINTS)+1.0e-7;
+      |       ^
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:29:7: error: not enough perfectly nested loops before ‘c’
+   29 |       c.real = -2.0+2.5*(double)(i)/(double)(NPOINTS)+1.0e-7;
+      |       ^
+Final Time is Wed 18 May 2022 02:50:09 PM -03

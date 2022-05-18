@@ -23,7 +23,7 @@ int main(){
  */
 
   start = omp_get_wtime();  
-  # pragma omp parallel for private(c,z) schedule(static, 2)
+  # pragma omp parallel for private(c,z) schedule(dynamic, 10) collapse(2)
   for (int i=0; i<NPOINTS; i++) {
     for (int j=0; j<NPOINTS; j++) {
       c.real = -2.0+2.5*(double)(i)/(double)(NPOINTS)+1.0e-7;
