@@ -17,17 +17,12 @@ int main(){
   double area, error, ztemp;
   double start, finish;
   struct complex z, c;
-
-/*
- *   
- *
- *     Outer loops run over npoints, initialise z=c
- *
+  omp_set_num_threads(OMP_NUM_THREADS);
+/*     Outer loops run over npoints, initialise z=c
  *     Inner loop has the iteration z=z*z+c, and threshold test
  */
 
   start = omp_get_wtime();  
-  
   for (int i=0; i<NPOINTS; i++) {
     for (int j=0; j<NPOINTS; j++) {
       c.real = -2.0+2.5*(double)(i)/(double)(NPOINTS)+1.0e-7;
@@ -38,13 +33,12 @@ int main(){
 	z.imag=z.real*z.imag*2+c.imag; 
 	z.real=ztemp; 
 	if ((z.real*z.real+z.imag*z.imag)>4.0e0) {
-	  numoutside++; 
+          numoutside++; 
 	  break;
 	}
       }
     }
   }
-
 
   finish = omp_get_wtime();  
 
