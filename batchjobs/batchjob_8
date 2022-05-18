@@ -15,7 +15,7 @@
 #SBATCH -n 8
 
 # time
-#SBATCH -t 60
+#SBATCH -t 240
 # time formats =  "minutes", "minutes:seconds", "hours:minutes:seconds", "days-hours", "days-hours:minutes" and "days-hours:minutes:seconds"
 
 # Exclusive (alloc all threads from each node) or shared (alloc only threads set by "-n" parameter)
@@ -94,7 +94,7 @@ mkdir out/$folder/BATCH_$SLURM_JOBID
 cp mandelbrot.c ./out/$folder/BATCH_$SLURM_JOBID
 touch out/$folder/BATCH_$SLURM_JOBID/8_threads
 
-./job out/$folder/BATCH_$SLURM_JOBID
+./job out/$folder/BATCH_$SLURM_JOBID 8
 
 ################
 
