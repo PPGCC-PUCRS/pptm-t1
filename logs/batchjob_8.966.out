@@ -1,0 +1,13 @@
+Running on host grad03
+
+Initial Time is Wed 18 May 2022 11:13:58 PM -03
+
+Directory is /home/pp12704/trabalho1
+
+This jobs runs on the following nodes:
+grad03
+
+JOB_ID:
+966
+
+slurmstepd-grad03: error: *** JOB 966 ON grad03 CANCELLED AT 2022-05-18T23:14:34 ***

@@ -23,7 +23,6 @@ int main(){
  */
 
   start = omp_get_wtime();  
-  #pragma omp parallel for private(c,z) schedule(dynamic)
   for (int i=0; i<NPOINTS; i++) {
     for (int j=0; j<NPOINTS; j++) {
       c.real = -2.0+2.5*(double)(i)/(double)(NPOINTS)+1.0e-7;
@@ -34,7 +33,6 @@ int main(){
 	z.imag=z.real*z.imag*2+c.imag; 
 	z.real=ztemp; 
 	if ((z.real*z.real+z.imag*z.imag)>4.0e0) {
-	  #pragma critical
           numoutside++; 
 	  break;
 	}

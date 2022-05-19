@@ -1,0 +1,13 @@
+Running on host grad07
+
+Initial Time is Thu 19 May 2022 02:42:27 AM -03
+
+Directory is /home/pp12704/trabalho1
+
+This jobs runs on the following nodes:
+grad07
+
+JOB_ID:
+1050
+
+slurmstepd-grad07: error: *** JOB 1050 ON grad07 CANCELLED AT 2022-05-19T02:43:11 ***
