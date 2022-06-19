@@ -1,0 +1,64 @@
+Running on host grad01
+
+Initial Time is Sun 19 Jun 2022 04:43:07 PM -03
+
+Directory is /home/pp12704/t2
+
+This jobs runs on the following nodes:
+grad[01-02]
+
+JOB_ID:
+2728
+
+Running on folder: 5
+with 16 threads
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:85:10: error: expected iteration declaration or initialization before ‘;’ token
+   85 |     for (;init < end; init++) {
+      |          ^
+running: 500
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:85:10: error: expected iteration declaration or initialization before ‘;’ token
+   85 |     for (;init < end; init++) {
+      |          ^
+running: 1000
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:85:10: error: expected iteration declaration or initialization before ‘;’ token
+   85 |     for (;init < end; init++) {
+      |          ^
+running: 1500
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:85:10: error: expected iteration declaration or initialization before ‘;’ token
+   85 |     for (;init < end; init++) {
+      |          ^
+running: 2000
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:85:10: error: expected iteration declaration or initialization before ‘;’ token
+   85 |     for (;init < end; init++) {
+      |          ^
+running: 2500
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:85:10: error: expected iteration declaration or initialization before ‘;’ token
+   85 |     for (;init < end; init++) {
+      |          ^
+running: 3000
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:85:10: error: expected iteration declaration or initialization before ‘;’ token
+   85 |     for (;init < end; init++) {
+      |          ^
+running: 3500
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:85:10: error: expected iteration declaration or initialization before ‘;’ token
+   85 |     for (;init < end; init++) {
+      |          ^
+running: 4000
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:85:10: error: expected iteration declaration or initialization before ‘;’ token
+   85 |     for (;init < end; init++) {
+      |          ^
+running: 4500
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:85:10: error: expected iteration declaration or initialization before ‘;’ token
+   85 |     for (;init < end; init++) {
+      |          ^
+running: 5000

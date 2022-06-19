@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <mpi.h> 
-#include <omp.h>
+
 
 struct complex{
   double real;
@@ -11,16 +11,14 @@ struct complex{
 
 
 int main(int argc, char *argv[]){
-  //omp_set_num_threads(OMP_NUM_THREADS); 
   int i, j, iter, numoutside = 0, total, init, end;
   double area, error, ztemp;
   double start, finish;
   struct complex z, c;
   // MPI information variables;
   int id, procnum, size;
- 
-
-   /*
+  
+  /*
    *   
    *
    *     Outer loops run over npoints, initialise z=c
@@ -54,8 +52,6 @@ int main(int argc, char *argv[]){
    // }
   
     int init = 0;
-
-    # pragma omp parallel for
     for (i=1; i < procnum; i++) {
       int end = (i+1) * NPOINTS / procnum;
       MPI_Send(&init,1,MPI_INT,i,0,MPI_COMM_WORLD);
@@ -80,7 +76,7 @@ int main(int argc, char *argv[]){
     MPI_Barrier(MPI_COMM_WORLD);
     MPI_Recv(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
     MPI_Recv(&end,1,MPI_INT,status.MPI_SOURCE,0,MPI_COMM_WORLD,&status);
- 
+  
     for (;init < end; init++) {
       for (j=0; j<NPOINTS; j++) {
         c.real = -2.0+2.5*(double)(init)/(double)(NPOINTS)+1.0e-7;

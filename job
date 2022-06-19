@@ -3,8 +3,11 @@
 :> ./$1/tempo ;
 :> ./$1/output ;
 
-
+echo with $2 threads
 for i in `seq 500 500 5000`;
-do gcc -o ./$1/app mandelbrot.c -DNPOINTS=$i -DMAXITER=$i -DOMP_NUM_THREADS=$2 -fopenmp;
-./$1/app 1>> ./$1/output 2>> ./$1/tempo ;
+do mpicc -o ./$1/app mandelbrot.c -DNPOINTS=$i -DMAXITER=$i -DOMP_NUM_THREADS=$2 -fopenmp;
+echo running: $i;
+mpirun -np 32 ./$1/app 1>> ./$1/output 2>> ./$1/tempo;
 done
+
+

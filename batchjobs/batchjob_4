@@ -1,65 +1,21 @@
 #!/bin/bash
-################->  are comments
-################-> "#SBATCH" (only one "#") are Batch Script commands
-################ Verbose mode
 
 #SBATCH --export=ALL
+#SBATCH --ntasks 32
+#SBATCH --nodes 4
+#SBATCH --ntasks-per-node=16
 
-################
+#SBATCH -t 60
 
-################ Change these parameters according to your requisites
-# nodes
-#SBATCH -N 1
-
-# tasks (threads)
-#SBATCH -n 4
-
-# time
-#SBATCH -t 240
-# time formats =  "minutes", "minutes:seconds", "hours:minutes:seconds", "days-hours", "days-hours:minutes" and "days-hours:minutes:seconds"
-
-# Exclusive (alloc all threads from each node) or shared (alloc only threads set by "-n" parameter)
 #SBATCH --exclusive
-##SBATCH --shared
-
-################ Please, change this e-mail address to yours
 
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=example@edu.pucrs.br
 
-################
-
 #SBATCH --no-requeue
-
-################ Output options
-
-# %%     The character "%".
-# %A     Job array's master job allocation number.
-# %a     Job array ID (index) number.
-# %J     jobid.stepid of the running job. (e.g. "128.0")
-# %j     jobid of the running job.
-# %N     short hostname. This will create a separate IO file per node.
-# %n     Node identifier relative to current job (e.g. "0" is the first node of the running job) This will create  a  separate IO file per node.
-# %s     stepid of the running job.
-# %t     task identifier (rank) relative to current job. This will create a separate IO file per task.
-# %u     User name.
-# %x     Job name.
-
-## different files for normal output end error output
-##SBATCH -o BATCH_%j/%x.%j.out -e %x.%j.err
-
-# or
-
-## all output in same file
 #SBATCH -o %x.%j.out
 
-################
-
-################ Please, change this directory to your working dir.
-
-#SBATCH -D /home/pp12704/trabalho1/
-
-################
+#SBATCH -D /home/pp12704/t2
 
 ################
 echo Running on host `hostname`
@@ -75,27 +31,14 @@ echo JOB_ID:
 echo $SLURM_JOBID
 echo ################
 
-############# Command example, if using MPI
-
-##make clean
-##make mpi
-##srun -N 2 -n 2 ./example
-
-################
-
-############# If running a sequential or openMP program
-
-## ./application
+############# Commands...
 
 folder=$(ls out -Art | tail -1)
+echo Running on folder: $folder
 
 mkdir out/$folder/BATCH_$SLURM_JOBID
 
 cp mandelbrot.c ./out/$folder/BATCH_$SLURM_JOBID
-touch out/$folder/BATCH_$SLURM_JOBID/4_threads
+touch out/$folder/BATCH_$SLURM_JOBID/4_NODOS
 
-./job out/$folder/BATCH_$SLURM_JOBID 4
-
-################
-
-echo Final Time is `date`
+./job out/$folder/BATCH_$SLURM_JOBID 16

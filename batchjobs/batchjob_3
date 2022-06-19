@@ -2,7 +2,7 @@
 
 #SBATCH --export=ALL
 #SBATCH --ntasks 32
-#SBATCH --nodes 2
+#SBATCH --nodes 3
 #SBATCH --ntasks-per-node=16
 
 #SBATCH -t 60
@@ -39,6 +39,6 @@ echo Running on folder: $folder
 mkdir out/$folder/BATCH_$SLURM_JOBID
 
 cp mandelbrot.c ./out/$folder/BATCH_$SLURM_JOBID
-touch out/$folder/BATCH_$SLURM_JOBID/2_NODOS
+touch out/$folder/BATCH_$SLURM_JOBID/3_NODOS
 
 ./job out/$folder/BATCH_$SLURM_JOBID 16

@@ -1,0 +1,263 @@
+Running on host grad01
+
+Initial Time is Sun 12 Jun 2022 07:54:23 PM -03
+
+Directory is /home/pp12704/t2
+
+This jobs runs on the following nodes:
+grad[01-02]
+
+JOB_ID:
+2369
+
+Running on folder: 2
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:63:32: error: expected ‘;’ before ‘)’ token
+   63 |     for (init < NPOINTS; init++) {
+      |                                ^
+      |                                ;
+mandelbrot.c:95:5: warning: implicit declaration of function ‘MPI_Revc’; did you mean ‘MPI_Recv’? [-Wimplicit-function-declaration]
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |     ^~~~~~~~
+      |     MPI_Recv
+mandelbrot.c:95:63: error: ‘status’ undeclared (first use in this function)
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |                                                               ^~~~~~
+mandelbrot.c:95:63: note: each undeclared identifier is reported only once for each function it appears in
+mandelbrot.c:98:28: error: expected ‘;’ before ‘)’ token
+   98 |     for (init < end; init++) {
+      |                            ^
+      |                            ;
+mandelbrot.c: In function ‘publish’:
+mandelbrot.c:125:25: error: ‘process’ undeclared (first use in this function)
+  125 |   MPI_Send(&i,1,MPI_INT,process,0,MPI_COMM_WORLD);
+      |                         ^~~~~~~
+mandelbrot.c:127:9: warning: comparison between pointer and integer
+  127 |   if( j < NPOINTS ){
+      |         ^
+running: 500
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:63:32: error: expected ‘;’ before ‘)’ token
+   63 |     for (init < NPOINTS; init++) {
+      |                                ^
+      |                                ;
+mandelbrot.c:95:5: warning: implicit declaration of function ‘MPI_Revc’; did you mean ‘MPI_Recv’? [-Wimplicit-function-declaration]
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |     ^~~~~~~~
+      |     MPI_Recv
+mandelbrot.c:95:63: error: ‘status’ undeclared (first use in this function)
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |                                                               ^~~~~~
+mandelbrot.c:95:63: note: each undeclared identifier is reported only once for each function it appears in
+mandelbrot.c:98:28: error: expected ‘;’ before ‘)’ token
+   98 |     for (init < end; init++) {
+      |                            ^
+      |                            ;
+mandelbrot.c: In function ‘publish’:
+mandelbrot.c:125:25: error: ‘process’ undeclared (first use in this function)
+  125 |   MPI_Send(&i,1,MPI_INT,process,0,MPI_COMM_WORLD);
+      |                         ^~~~~~~
+mandelbrot.c:127:9: warning: comparison between pointer and integer
+  127 |   if( j < NPOINTS ){
+      |         ^
+running: 1000
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:63:32: error: expected ‘;’ before ‘)’ token
+   63 |     for (init < NPOINTS; init++) {
+      |                                ^
+      |                                ;
+mandelbrot.c:95:5: warning: implicit declaration of function ‘MPI_Revc’; did you mean ‘MPI_Recv’? [-Wimplicit-function-declaration]
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |     ^~~~~~~~
+      |     MPI_Recv
+mandelbrot.c:95:63: error: ‘status’ undeclared (first use in this function)
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |                                                               ^~~~~~
+mandelbrot.c:95:63: note: each undeclared identifier is reported only once for each function it appears in
+mandelbrot.c:98:28: error: expected ‘;’ before ‘)’ token
+   98 |     for (init < end; init++) {
+      |                            ^
+      |                            ;
+mandelbrot.c: In function ‘publish’:
+mandelbrot.c:125:25: error: ‘process’ undeclared (first use in this function)
+  125 |   MPI_Send(&i,1,MPI_INT,process,0,MPI_COMM_WORLD);
+      |                         ^~~~~~~
+mandelbrot.c:127:9: warning: comparison between pointer and integer
+  127 |   if( j < NPOINTS ){
+      |         ^
+running: 1500
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:63:32: error: expected ‘;’ before ‘)’ token
+   63 |     for (init < NPOINTS; init++) {
+      |                                ^
+      |                                ;
+mandelbrot.c:95:5: warning: implicit declaration of function ‘MPI_Revc’; did you mean ‘MPI_Recv’? [-Wimplicit-function-declaration]
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |     ^~~~~~~~
+      |     MPI_Recv
+mandelbrot.c:95:63: error: ‘status’ undeclared (first use in this function)
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |                                                               ^~~~~~
+mandelbrot.c:95:63: note: each undeclared identifier is reported only once for each function it appears in
+mandelbrot.c:98:28: error: expected ‘;’ before ‘)’ token
+   98 |     for (init < end; init++) {
+      |                            ^
+      |                            ;
+mandelbrot.c: In function ‘publish’:
+mandelbrot.c:125:25: error: ‘process’ undeclared (first use in this function)
+  125 |   MPI_Send(&i,1,MPI_INT,process,0,MPI_COMM_WORLD);
+      |                         ^~~~~~~
+mandelbrot.c:127:9: warning: comparison between pointer and integer
+  127 |   if( j < NPOINTS ){
+      |         ^
+running: 2000
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:63:32: error: expected ‘;’ before ‘)’ token
+   63 |     for (init < NPOINTS; init++) {
+      |                                ^
+      |                                ;
+mandelbrot.c:95:5: warning: implicit declaration of function ‘MPI_Revc’; did you mean ‘MPI_Recv’? [-Wimplicit-function-declaration]
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |     ^~~~~~~~
+      |     MPI_Recv
+mandelbrot.c:95:63: error: ‘status’ undeclared (first use in this function)
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |                                                               ^~~~~~
+mandelbrot.c:95:63: note: each undeclared identifier is reported only once for each function it appears in
+mandelbrot.c:98:28: error: expected ‘;’ before ‘)’ token
+   98 |     for (init < end; init++) {
+      |                            ^
+      |                            ;
+mandelbrot.c: In function ‘publish’:
+mandelbrot.c:125:25: error: ‘process’ undeclared (first use in this function)
+  125 |   MPI_Send(&i,1,MPI_INT,process,0,MPI_COMM_WORLD);
+      |                         ^~~~~~~
+mandelbrot.c:127:9: warning: comparison between pointer and integer
+  127 |   if( j < NPOINTS ){
+      |         ^
+running: 2500
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:63:32: error: expected ‘;’ before ‘)’ token
+   63 |     for (init < NPOINTS; init++) {
+      |                                ^
+      |                                ;
+mandelbrot.c:95:5: warning: implicit declaration of function ‘MPI_Revc’; did you mean ‘MPI_Recv’? [-Wimplicit-function-declaration]
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |     ^~~~~~~~
+      |     MPI_Recv
+mandelbrot.c:95:63: error: ‘status’ undeclared (first use in this function)
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |                                                               ^~~~~~
+mandelbrot.c:95:63: note: each undeclared identifier is reported only once for each function it appears in
+mandelbrot.c:98:28: error: expected ‘;’ before ‘)’ token
+   98 |     for (init < end; init++) {
+      |                            ^
+      |                            ;
+mandelbrot.c: In function ‘publish’:
+mandelbrot.c:125:25: error: ‘process’ undeclared (first use in this function)
+  125 |   MPI_Send(&i,1,MPI_INT,process,0,MPI_COMM_WORLD);
+      |                         ^~~~~~~
+mandelbrot.c:127:9: warning: comparison between pointer and integer
+  127 |   if( j < NPOINTS ){
+      |         ^
+running: 3000
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:63:32: error: expected ‘;’ before ‘)’ token
+   63 |     for (init < NPOINTS; init++) {
+      |                                ^
+      |                                ;
+mandelbrot.c:95:5: warning: implicit declaration of function ‘MPI_Revc’; did you mean ‘MPI_Recv’? [-Wimplicit-function-declaration]
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |     ^~~~~~~~
+      |     MPI_Recv
+mandelbrot.c:95:63: error: ‘status’ undeclared (first use in this function)
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |                                                               ^~~~~~
+mandelbrot.c:95:63: note: each undeclared identifier is reported only once for each function it appears in
+mandelbrot.c:98:28: error: expected ‘;’ before ‘)’ token
+   98 |     for (init < end; init++) {
+      |                            ^
+      |                            ;
+mandelbrot.c: In function ‘publish’:
+mandelbrot.c:125:25: error: ‘process’ undeclared (first use in this function)
+  125 |   MPI_Send(&i,1,MPI_INT,process,0,MPI_COMM_WORLD);
+      |                         ^~~~~~~
+mandelbrot.c:127:9: warning: comparison between pointer and integer
+  127 |   if( j < NPOINTS ){
+      |         ^
+running: 3500
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:63:32: error: expected ‘;’ before ‘)’ token
+   63 |     for (init < NPOINTS; init++) {
+      |                                ^
+      |                                ;
+mandelbrot.c:95:5: warning: implicit declaration of function ‘MPI_Revc’; did you mean ‘MPI_Recv’? [-Wimplicit-function-declaration]
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |     ^~~~~~~~
+      |     MPI_Recv
+mandelbrot.c:95:63: error: ‘status’ undeclared (first use in this function)
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |                                                               ^~~~~~
+mandelbrot.c:95:63: note: each undeclared identifier is reported only once for each function it appears in
+mandelbrot.c:98:28: error: expected ‘;’ before ‘)’ token
+   98 |     for (init < end; init++) {
+      |                            ^
+      |                            ;
+mandelbrot.c: In function ‘publish’:
+mandelbrot.c:125:25: error: ‘process’ undeclared (first use in this function)
+  125 |   MPI_Send(&i,1,MPI_INT,process,0,MPI_COMM_WORLD);
+      |                         ^~~~~~~
+mandelbrot.c:127:9: warning: comparison between pointer and integer
+  127 |   if( j < NPOINTS ){
+      |         ^
+running: 4000
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:63:32: error: expected ‘;’ before ‘)’ token
+   63 |     for (init < NPOINTS; init++) {
+      |                                ^
+      |                                ;
+mandelbrot.c:95:5: warning: implicit declaration of function ‘MPI_Revc’; did you mean ‘MPI_Recv’? [-Wimplicit-function-declaration]
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |     ^~~~~~~~
+      |     MPI_Recv
+mandelbrot.c:95:63: error: ‘status’ undeclared (first use in this function)
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |                                                               ^~~~~~
+mandelbrot.c:95:63: note: each undeclared identifier is reported only once for each function it appears in
+mandelbrot.c:98:28: error: expected ‘;’ before ‘)’ token
+   98 |     for (init < end; init++) {
+      |                            ^
+      |                            ;
+mandelbrot.c: In function ‘publish’:
+mandelbrot.c:125:25: error: ‘process’ undeclared (first use in this function)
+  125 |   MPI_Send(&i,1,MPI_INT,process,0,MPI_COMM_WORLD);
+      |                         ^~~~~~~
+mandelbrot.c:127:9: warning: comparison between pointer and integer
+  127 |   if( j < NPOINTS ){
+      |         ^
+running: 4500
+mandelbrot.c: In function ‘main’:
+mandelbrot.c:63:32: error: expected ‘;’ before ‘)’ token
+   63 |     for (init < NPOINTS; init++) {
+      |                                ^
+      |                                ;
+mandelbrot.c:95:5: warning: implicit declaration of function ‘MPI_Revc’; did you mean ‘MPI_Recv’? [-Wimplicit-function-declaration]
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |     ^~~~~~~~
+      |     MPI_Recv
+mandelbrot.c:95:63: error: ‘status’ undeclared (first use in this function)
+   95 |     MPI_Revc(&init,1,MPI_INT,MPI_ANY_SOURCE,0,MPI_COMM_WORLD,&status);
+      |                                                               ^~~~~~
+mandelbrot.c:95:63: note: each undeclared identifier is reported only once for each function it appears in
+mandelbrot.c:98:28: error: expected ‘;’ before ‘)’ token
+   98 |     for (init < end; init++) {
+      |                            ^
+      |                            ;
+mandelbrot.c: In function ‘publish’:
+mandelbrot.c:125:25: error: ‘process’ undeclared (first use in this function)
+  125 |   MPI_Send(&i,1,MPI_INT,process,0,MPI_COMM_WORLD);
+      |                         ^~~~~~~
+mandelbrot.c:127:9: warning: comparison between pointer and integer
+  127 |   if( j < NPOINTS ){
+      |         ^
+running: 5000
