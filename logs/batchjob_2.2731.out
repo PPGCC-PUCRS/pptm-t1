@@ -14,3 +14,4 @@ Running on folder: 6
 with 16 threads
 running: 500
 running: 1000
+slurmstepd-grad03: error: *** JOB 2731 ON grad03 CANCELLED AT 2022-06-19T17:10:28 ***

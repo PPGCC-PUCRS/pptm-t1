@@ -1,5 +1,12 @@
 #!/bin/bash
-mv *.out logs
+last=$(ls out -Art | tail -1)
+batch=$(ls out/$last -Art | tail -1)
+
+#echo $(ls out)
+#echo "$last -> $(ls out/$last)"
+#echo grep on out/$last/$batch
+
+mv *.out out/$last/
 
 ##rm BATCH* -r
 ##rm *out

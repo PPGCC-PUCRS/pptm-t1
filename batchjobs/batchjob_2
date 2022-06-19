@@ -32,6 +32,7 @@ echo $SLURM_JOBID
 echo ################
 
 ############# Commands...
+export OMP_NUM_THREADS=16
 
 folder=$(ls out -Art | tail -1)
 echo Running on folder: $folder
