@@ -1,0 +1,23 @@
+Running on host grad05
+
+Initial Time is Tue 21 Jun 2022 10:21:02 PM -03
+
+Directory is /home/pp12704/t2
+
+This jobs runs on the following nodes:
+grad[05-08]
+
+JOB_ID:
+3136
+
+Running on folder: 4
+running: 500
+running: 1000
+running: 1500
+running: 2000
+running: 2500
+running: 3000
+running: 3500
+running: 4000
+running: 4500
+running: 5000
