@@ -2,7 +2,7 @@
 
 #SBATCH --export=ALL
 #SBATCH --ntasks 32
-#SBATCH --nodes 2
+#SBATCH --nodes 8
 #SBATCH --ntasks-per-node=16
 
 #SBATCH -t 60
@@ -32,7 +32,6 @@ echo $SLURM_JOBID
 echo ################
 
 ############# Commands...
-export OMP_NUM_THREADS=16
 
 folder=$(ls out -Art | tail -1)
 echo Running on folder: $folder
@@ -40,6 +39,6 @@ echo Running on folder: $folder
 mkdir out/$folder/BATCH_$SLURM_JOBID
 
 cp pptm.cpp ./out/$folder/BATCH_$SLURM_JOBID
-touch out/$folder/BATCH_$SLURM_JOBID/2_NODOS
+touch out/$folder/BATCH_$SLURM_JOBID/8_NODOS
 
 ./job out/$folder/BATCH_$SLURM_JOBID 16

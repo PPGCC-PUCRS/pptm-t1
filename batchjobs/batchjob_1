@@ -2,7 +2,7 @@
 
 #SBATCH --export=ALL
 #SBATCH --ntasks 32
-#SBATCH --nodes 3
+#SBATCH --nodes 1
 #SBATCH --ntasks-per-node=16
 
 #SBATCH -t 60
@@ -15,7 +15,7 @@
 #SBATCH --no-requeue
 #SBATCH -o %x.%j.out
 
-#SBATCH -D /home/pp12704/t2
+#SBATCH -D /home/pptm02/t1
 
 ################
 echo Running on host `hostname`
@@ -32,13 +32,14 @@ echo $SLURM_JOBID
 echo ################
 
 ############# Commands...
+export OMP_NUM_THREADS=16
 
 folder=$(ls out -Art | tail -1)
 echo Running on folder: $folder
 
 mkdir out/$folder/BATCH_$SLURM_JOBID
 
-cp mandelbrot.c ./out/$folder/BATCH_$SLURM_JOBID
-touch out/$folder/BATCH_$SLURM_JOBID/3_NODOS
+cp pptm.cpp ./out/$folder/BATCH_$SLURM_JOBID
+touch out/$folder/BATCH_$SLURM_JOBID/1_NODOS
 
 ./job out/$folder/BATCH_$SLURM_JOBID 16

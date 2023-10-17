@@ -5,9 +5,12 @@ folder=$(($last + 1))
 
 mkdir out/$folder
 
-sbatch batchjobs/batchjob_2
-#sbatch batchjobs/batchjob_3
+sbatch batchjobs/batchjob_1
+#sbatch batchjobs/batchjob_2
 #sbatch batchjobs/batchjob_4
+#sbatch batchjobs/batchjob_6
+#sbatch batchjobs/batchjob_8
+#sbatch batchjobs/batchjob_16
 
 sleep 1
 ./clear
